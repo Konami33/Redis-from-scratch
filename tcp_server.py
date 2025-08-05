@@ -10,7 +10,7 @@ class TCPServer:
         print(f"Server listening on {host}:{port}")
     
     def handle_client(self, conn, addr):
-        print(f"Connected by {addr}")
+        print(f"Connected by connection {conn} and address {addr}")
         try:
             while True:
                 data = conn.recv(1024).decode().strip()
